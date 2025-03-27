@@ -1,0 +1,32 @@
+# Template file for colors - variables like {{SonSurface}} will be replaced
+
+general {
+    col.active_border = rgba({{active_border_color}}39)
+    col.inactive_border = rgba({{inactive_border_color}}30)
+}
+
+misc {
+    background_color = rgba({{background_color}}FF)
+}
+
+plugin {
+    hyprbars {
+        # Bar configuration
+        bar_text_font = Rubik, Geist, AR One Sans, Reddit Sans, Inter, Roboto, Ubuntu, Noto Sans, sans-serif
+        bar_height = 30
+        bar_padding = 10
+        bar_button_padding = 5
+        bar_precedence_over_border = true
+        bar_part_of_window = true
+
+        bar_color = rgba({{background_color}}FF)
+        col.text = rgba({{text_color}}FF)
+
+        # Buttons (R -> L)
+        hyprbars-button = rgb({{button_color}}), 13, 󰖭, hyprctl dispatch killactive
+        hyprbars-button = rgb({{button_color}}), 13, 󰖯, hyprctl dispatch fullscreen 1
+        hyprbars-button = rgb({{button_color}}), 13, 󰖰, hyprctl dispatch movetoworkspacesilent special
+    }
+}
+
+windowrulev2 = bordercolor rgba({{pinned_border_active}}AA) rgba({{pinned_border_inactive}}77),pinned:1
