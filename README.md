@@ -1,0 +1,3 @@
+-  nordic wallpaper
+-  - nothing theme (kde)
+-  whitesur gtk theme (kde)
